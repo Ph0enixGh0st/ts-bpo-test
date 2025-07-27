@@ -3,11 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { viteSourceLocator } from "@metagptx/vite-plugin-source-locator";
 
-// ⚠️ Replace 'your-repo-name' with your actual GitHub repo name
-const repoName = 'ts-bpo-test';
-
 export default defineConfig(({ mode }) => ({
-  base: `/${repoName}/`,
+  base: '/ts-bpo-test/',
   plugins: [
     viteSourceLocator({
       prefix: "mgx",
